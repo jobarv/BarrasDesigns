@@ -14,8 +14,9 @@
 */
 :root {
     --fondos:#4BBBFA;
-    --textparr: rgba(0, 0, 0, 0.3);
-    --nav: rgba(47, 119, 235, 0.9);
+    --hover: #00000;
+    --nav: #ffffff;
+    --textparr: #146B9C;
 }
 /* 
 ██████╗ ██╗      ██████╗ ██████╗  █████╗ ██╗     ███████╗███████╗
@@ -43,14 +44,17 @@ p {
 .nav {
     display: flex;
     justify-content:space-evenly;
-    background-color: var(--fondos); /** Otra opción */
+    background-color: var(--fondos);
 }
-.logo {
-    margin: ;
-    max-width: 33%;
-    height: 100%;
-    
+.nav a:hover {
+    background-color: var(--nav);
+    color: var(--hover);
+    border-radius: 0.5rem;
+}
 
+.logo {
+    padding: 2rem;
+    max-width: 33%;
     
 }
 .bg-hero {
@@ -59,31 +63,26 @@ p {
     height: 20rem;
     background-image: url(../img/hero-img.jpg);
     background-repeat: no-repeat;
-    
-        
-    
+    position: relative; 
     
 }   
 .contHero {
     
-    width: 100%;
+    width: 60rem;
     height: 100%;  
-    
+    position: absolute;
+    background-color: rgba(0 0 0 / 30%);
     display: flex;
     justify-content: space-evenly;
     
-    
 }
-.space1{
-    
-    width: 10%;
-}
-.space2 {
+
+.space1 {
     width: 100%;
     
 }
 .contLk {
-    width: 50%;
+    width: 0.2%;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -91,8 +90,8 @@ p {
 .lk {
     text-decoration: none;
     color: var(--nav);
-    padding: 0.5rem;
-    font-size: 1.5rem;
+    padding: 0.3rem;
+    font-size: 1.1rem;
     
 }
 .promo1{
@@ -102,13 +101,22 @@ p {
 .icon {
     max-width: 4rem;
 }
+.cont-foot {
+    background-color: var(--fondos);
+    display: flex;
+   
+
+}
 .footer {
     width: 100%;
-    background-color: var(--fondos);
     display: flex;
     justify-content: flex-end;
    
-    
+}
+
+.redes {
+   
+
 }
 
 /* 
@@ -118,7 +126,23 @@ p {
 ██║██║╚██╗██║██║  ██║██╔══╝   ██╔██╗ 
 ██║██║ ╚████║██████╔╝███████╗██╔╝ ██╗ */
 
+.destacados {
+    background-color:rgba(0, 0, 0, 0.3);
+    margin: 1rem 10%;
+    padding: 1rem;
+    width: 80rem;
+    height: 35rem;    
+}
+.promo1{
+    margin:0 33%;
+}
+.slider {
+    background-color:rgba(0, 0, 0, 0.3);
+    margin: 0 10%;
+    width: 80rem;
+    height: 35rem;
 
+}
 /* 
 ███╗   ██╗ ██████╗ ███████╗ ██████╗ ████████╗██████╗  ██████╗ ███████╗
 ████╗  ██║██╔═══██╗██╔════╝██╔═══██╗╚══██╔══╝██╔══██╗██╔═══██╗██╔════╝
