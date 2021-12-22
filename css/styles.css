@@ -14,7 +14,7 @@
 */
 :root {
     --fondos:#4BBBFA;
-    --hover: #00000;
+    --hover: #000000;
     --nav: #ffffff;
     --textparr: #146B9C;
 }
@@ -25,7 +25,7 @@
 ██║   ██║██║     ██║   ██║██╔══██╗██╔══██║██║     ██╔══╝  ╚════██║
 ╚██████╔╝███████╗╚██████╔╝██████╔╝██║  ██║███████╗███████╗███████║
  ╚═════╝ ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝
-                                                                   */
+  */
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
@@ -41,51 +41,38 @@ h1 {
 p {
     color: var(--textparr);
 }
-.nav {
-    display: flex;
-    justify-content:space-evenly;
+.contHeader {
     background-color: var(--fondos);
+    width: 100%;
+
 }
-.nav a:hover {
+.bgHero {
+
+    margin: 0 0 0 15%;
+    background-image: url(../img/hero-img.jpg);
+    background-repeat: no-repeat;
+    width: 60rem;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 13rem;
+    height: 13rem;
+}
+.contLk {
+    
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.contLk a:hover {
     background-color: var(--nav);
     color: var(--hover);
     border-radius: 0.5rem;
-}
-
-.logo {
-    padding: 2rem;
-    max-width: 33%;
-    
-}
-.bg-hero {
-    
-    width: 100%;
-    height: 20rem;
-    background-image: url(../img/hero-img.jpg);
-    background-repeat: no-repeat;
-    position: relative; 
-    
-}   
-.contHero {
-    
-    width: 60rem;
-    height: 100%;  
-    position: absolute;
-    background-color: rgba(0 0 0 / 30%);
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-
-.space1 {
-    width: 100%;
-    
-}
-.contLk {
-    width: 0.2%;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
 }
 .lk {
     text-decoration: none;
@@ -94,6 +81,7 @@ p {
     font-size: 1.1rem;
     
 }
+
 .promo1{
     padding: 2rem;
     
