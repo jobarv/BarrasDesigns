@@ -35,12 +35,7 @@ html {
     box-sizing: inherit;
   }
 
-h1 {
-    color: var(--titulo)
-}
-p {
-    color: var(--textparr);
-}
+
 .contHeader {
     background-color: var(--fondos);
     width: 100%;
@@ -52,7 +47,7 @@ p {
     background-image: url(../img/hero-img.jpg);
     background-repeat: no-repeat;
     width: 60rem;
-    height: 20rem;
+    height: 19rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +73,7 @@ p {
     text-decoration: none;
     color: var(--nav);
     padding: 0.3rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     
 }
 
@@ -115,11 +110,19 @@ p {
 ██║██║ ╚████║██████╔╝███████╗██╔╝ ██╗ */
 
 .destacados {
+    display: grid;
+    width: 100%;
+    height: 20rem;
     background-color:rgba(0, 0, 0, 0.3);
-    margin: 1rem 10%;
-    padding: 1rem;
-    width: 80rem;
-    height: 35rem;    
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: prod1 img1 prod2 img2;
+
+   
+}
+.prod1 {
+    text-align: center;
+    
 }
 .promo1{
     margin:0 33%;
