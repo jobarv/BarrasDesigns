@@ -222,30 +222,45 @@ body {
 ██║   ██║██╔══██║██║     ██╔══╝  ██╔══██╗██║██╔══██║
 ╚██████╔╝██║  ██║███████╗███████╗██║  ██║██║██║  ██║ */
 
-.galeria {
-    width 100%;
-    height: 50rem;
+.cont-galeria {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "foto1 foto2 foto3 foto4"
-                         "foto5 foto6 foto7 foto8"
-                         "foto9 foto10 foto11 foto12";
-    gap: 0.5rem;
+    grid-template-columns: repeat (3, 1fr);
+    grid-auto-rows: 15rem;
+    padding: 2rem;
+    grid-gap: 1rem;
 
 }
-
-.foto1 {
-    grid-area: foto1;
-    justify-items: start;
-    align-items: center;
-}
-.foto2 {
-    grid-area: foto2;
-    justify-items: start;
-    align-items: center;
+.galeria__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
 }
+.galeria__item:nth-child(1) {
+    grid-column-start: span 3;
+    
+    
+}
+.galeria__item:nth-child(2) {
+    grid-row-start: span 2;
+}
+.galeria__item:nth-child(3) {
+    grid-column-start: span 2;
+}
+.galeria__item:nth-child(4) {
+    grid-row-start: span 2;
+    
+}
+.galeria__item:nth-child(5) {
+    grid-row-start: span 2;
+    
+}
+.galeria__item:nth-child(6) {
+    grid-column-start: span 2;
+    
+}
+
+
 
 
 
