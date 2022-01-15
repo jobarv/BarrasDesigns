@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <title>Barras-Designs</title>
+    
   </head>
   <body>
     
@@ -20,7 +20,7 @@
      
       <div class="bgHero">
         <div class="contHeader">
-          <img class="logo" src="./img/Logo1-01.png" alt="logo" />
+          <img class="logo animate__animated animate__rotateIn" src="./img/Logo1-01.png" alt="logo" />
         
           <nav class="contLk">
             <a class="lk" href="/index.html"> <li>Inicio</li> </a>
@@ -36,17 +36,23 @@
   </header>
 
     <main>
-      <div class="destacados">
-        <p class="prod1">Producto Destacado 1</p>
-        <p class="img1">imágen Destacado 1</p>
-        <p class="prod2">Producto Destacado 2</p>
-        <p class="img2">Imágen Destacado 2</p>
-      </div>
-      <div class="promo">
-        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBarrasdismty%2Fvideos%2F226445698692361%2F&show_text=true&width=560&t=0" width="560" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-      </div>
+      
+      <div class="cont-destacados">
+        <div class="destacados__item">
+          <img class="destacados__img" src="./img/stickers1.jpg" alt="prod1">
+          <h2 class="destacados__titulo">Stickers Personalizados</h2>
+        </div>
+        <div class="destacados__item">
+          <img class="destacados__img" src="./img/vinil1.jpg" alt="prod2">
+          <h2 class="destacados__titulo">Playeras con tu diseño</h2>
+        </div>
 
-      <div class="slider"><p>Este es un slider</p></div>
+      </div>
+<!--       <div class="promo">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FBarrasdismty%2Fvideos%2F226445698692361%2F&show_text=true&width=560&t=0" width="560" height="429" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+      </div> -->
+
+      <!-- <div class="slider"><p>Este es un slider</p></div> -->
     </main>
     <footer class="cont-foot">
       <h3>
@@ -82,5 +88,6 @@
       
     
   </footer>
+
 </body>
 </html>
