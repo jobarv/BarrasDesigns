@@ -172,32 +172,65 @@ body {
 ██║██║ ╚████║██████╔╝███████╗██╔╝ ██╗ */
 
 .cont-destacados {
-    display: grid;
     width: 100%;
     height: 100%;   
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 40rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: repear(2, 1fr);
+    grid-template-areas: "img1 title1 img2 title2 img3 title3"
+                         "img1 des1 img2 des2 img3 des3"   ;  
     justify-items: center;
-/*     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100%;
-    grid-template-areas: prod1 img1 prod2 img2; */
+    align-items: center;
+    row-gap: 1rem;
     column-gap: 1rem;
-
-   
 }
-.destacados__img {
+.img1, .img2, .img3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.destacados__img:nth-child(1) {
-    grid-row-start: span 2;
-
+.img1 {
+    grid-area: img1;
 }
-.destacados__img:nth-child(2) {
-    grid-row-start: span 2;
-
+.title1 {
+    grid-area: title1;
 }
+.des1 {
+    grid-area: des1;
+}
+.img2 {
+    grid-area: img2;
+}
+.title2 {
+    grid-area: title2;
+}
+.des2 {
+    grid-area: des2;
+}
+.img3 {
+    grid-area: img3;
+}
+.title3 {
+    grid-area: title3;
+}
+.des3 {
+    grid-area: des3;
+}
+@media (max-width: 468px) {
+    .cont-destacados {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: repear(6, 1fr);
+    grid-template-areas: "img1 title1" 
+                         "img1 des1"
+                         "img2 title2"
+                         "img2 des2"
+                         "img3 title3"
+                         "img3 des3";
+    }
+
+    
+}
+
 
 
 /* .promo1{
