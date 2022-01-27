@@ -499,7 +499,7 @@ label {
 }
 
 .btn {
-  color: var(--fondonegro);
+  color: var(--blanco);
 
   border: 0.1rem solid #77bcd3;
   border-radius: 1rem;

@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/normalize.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,70 +51,73 @@
   </header>
 
   <body>
+
     <main>
       <section class="bkg">
         <div class="cont-contacto">
-          <form class="form" action="#">
+          <form class="form row g-3" action="#">
             <div class="fieldset">
               <fieldset>
                 <legend style="color: white;">¡Contáctanos! estaremos felices de atenderte.</legend>
-                <div class="campo">
-                  <label for="tuNombre" id="lbnombre">Nombre</label>
-                  <br />
-                  <input class="input" type="text" name="tuNombre" />
-                  <br />
+
+                <div class="col-md-12">
+                  <label for="tuNombre" class="form-label">Tu Nombre</label>
+                  <input type="text" class="form-control" id="tunombre">
                 </div>
-                <div class="campo">
-                  <label for="tuCorreo" id="lbcorreo">Correo</label>
-                  <br />
-                  <input type="email" name="tuCorreo" />
-                  <br />
+
+
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label">Tu Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
                 </div>
-                <div class="campo">
-                  <label for="TuNumero" id="lbnumero">Número</label>
-                  <br />
-                  <input type="text" name="tuNumero" />
-                  <br />
+                <div class="col-md-12">
+                  <label for="tuNumero" class="form-label">Tu número</label>
+                  <input type="number" class="form-control" id="tuNumero">
                 </div>
-                <div class="campo">
-                  <label for="tuMensaje" id="lbmsg">Mensaje</label>
-                  <br />
-                  <textarea name="tuMensaje" id="msg" cols="30" rows="10"></textarea>
+                <div class="col-md-12">
+                  <label for="inputCity" class="form-label">Tu Ciudad</label>
+                  <input type="text" class="form-control" id="inputCity">
                 </div>
-                <div class="boton">
-                  <input class="btn" type="submit" value="Enviar" />
+
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
-              </fieldset>
-            </div>
+          </form>
+
 
           </form>
         </div>
 
       </section>
+      <footer class="cont-foot">
+        <h3>
+          Made with
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="34" height="34"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>by <a href="https://www.vabaja.com.mx">VABAJA</a>
+        </h3>
 
-    </main>
+        <div>
+          <h3>Visita nuestras redes sociales</h2>
+            <a class="icon" href="https://www.facebook.com/Barrasdismty"><img class="icon" src="../img/facebook.png"
+                alt="facebookicon" /></a>
+            <a class="icon" href="https://www.instagram.com/barrasdesigns"><img class="icon" src="../img/instagram.png"
+                alt="instaicon" /></a>
+          </h3>
+        </div>
+
+
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
   </body>
-  <footer class="cont-foot">
-    <h3>
-      Made with
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="34" height="34"
-        viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
-        stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-      </svg>by <a href="https://www.vabaja.com.mx">VABAJA</a>
-    </h3>
-
-    <div>
-      <h3>Visita nuestras redes sociales</h2>
-        <a class="icon" href="https://www.facebook.com/Barrasdismty"><img class="icon" src="../img/facebook.png"
-            alt="facebookicon" /></a>
-        <a class="icon" href="https://www.instagram.com/barrasdesigns"><img class="icon" src="../img/instagram.png"
-            alt="instaicon" /></a>
-      </h3>
-    </div>
-
-
-  </footer>
 
 </html>
