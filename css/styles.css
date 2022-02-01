@@ -18,6 +18,7 @@
   --fondoform: #ae46f3;
   --hover: #ffffff;
   --nav: #ffffff;
+  --blanco: #ffff;
   --textparr: #66149c;
 }
 /* 
@@ -335,6 +336,15 @@ body {
   }
 
     
+}
+
+.quote {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.quote__texto {
+  color: var(--blanco);
 }
 /* 
 ██████╗  █████╗ ██╗     ███████╗██████╗ ██╗ █████╗ 
