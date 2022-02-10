@@ -194,7 +194,7 @@ body {
 .destacados__item:nth-child(2) {
   grid-column-start: span (1);
 }
-}
+
 .destacados__item:nth-child(3) {
   grid-column-start: span (1);
 }
@@ -245,7 +245,7 @@ body {
 .nostros__item:nth-child(2) {
   grid-column-start: span (1);
 }
-}
+
 .nostros__item:nth-child(3) {
   grid-column-start: span (1);
 }
@@ -378,22 +378,22 @@ body {
   padding: 1rem;
 }
 .galeria__item:nth-child(1) {
-  grid-column-start: span 1;
+  grid-column-start: span 3;
 }
 .galeria__item:nth-child(2) {
-  grid-column-start: span 2;
+  grid-column-start: span 3;
 }
 .galeria__item:nth-child(3) {
   grid-column-start: span 3;
 }
 .galeria__item:nth-chiLd(4) {
-  grid-column-start: span 1;
+  grid-column-start: span 3;
 }
 .galeria__item:nth-child(5) {
-  grid-column-start: span 1;
+  grid-column-start: span 3;
 }
 .galeria__item:nth-child(6) {
-  grid-column-start: span 1;
+  grid-column-start: span 3;
 }
 @media (min-width: 468px) {
   .cont-galeria {
