@@ -55,12 +55,16 @@ html {
 *:after {
   box-sizing: inherit;
   /* 1 rem = 10px */ }
-
-body {
-  background-color: #ae46f3;
+  
+  body {
+    background-color: #ae46f3;
   width: 100%;
   height: 20rem; }
-
+  
+  .oscuro{ 
+    background-color: #dddddd; 
+    color: #1d1d1d; 
+}
 .header {
   width: 100%;
   height: 100%;
