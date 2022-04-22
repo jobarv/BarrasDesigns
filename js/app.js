@@ -1,35 +1,93 @@
-//Se pretende realizar un carrito de compras para la tienda de Barras Designs
-//El usuario podrá agregar, borrar y visualizar el carrito de compras.
-// Se deberá guardar la sesión del usuario con nombre de usuario y preparar todo para eventualmente integrar una base de datos.
-
-//función cambio de color de Fondo
-function cambiarModo() {
-    let cuerpoweb = document.body;
-    cuerpoweb.classList.toggle("oscuro");
-  }
 // Variables
-let Playera;
-// let nombre;
+const carrito = document.querySelector('#carrito');
+const listaCursos = document.querySelector('#lista-cursos');
+const contenedorCarrito = document.querySelector('#lista-carrito tbody');
+const vaciarCarritoBtn = document.querySelector('#vaciar-carrito'); 
+let articulosCarrito = [];
 
-function agregarPlayera() {
-    alert("Playera Agregada al Carrito");
+// Listeners
+cargarEventListeners();
+
+function cargarEventListeners() {
+     // Dispara cuando se presiona "Agregar Carrito"
+     listaCursos.addEventListener('click', agregarCurso);
+
+
+
 }
 
-//Sesión del Usuario
-
-// "Agregar Carrito"
-
-// Elimina playera del carrito
 
 
 
-// Elimina la playera del carrito en el DOM
+// Funciones
+// Función que añade el curso al carrito
+function agregarCurso(e) {
+     e.preventDefault();
+     // Delegation para agregar-carrito
+     if(e.target.classList.contains('agregar-carrito')) {
+          const curso = e.target.parentElement.parentElement;
+          // Enviamos el curso seleccionado para tomar sus datos
+          leerDatosCurso(curso);
+     }
+}
+
+// Lee los datos del curso
+function leerDatosCurso(curso) {
+     const infoCurso = {
+          imagen: curso.querySelector('img').src,
+          titulo: curso.querySelector('h4').textContent,
+          precio: curso.querySelector('.precio span').textContent,
+          id: curso.querySelector('a').getAttribute('data-id'), 
+          cantidad: 1
+     }
+
+
+     if( articulosCarrito.some( curso => curso.id === infoCurso.id ) ) { 
+          const cursos = articulosCarrito.map( curso => {
+               if( curso.id === infoCurso.id ) {
+                    curso.cantidad++;
+                     return curso;
+                } else {
+                     return curso;
+             }
+          })
+          articulosCarrito = [...cursos];
+     }  else {
+          articulosCarrito = [...articulosCarrito, infoCurso];
+     }
+
+     // console.log(articulosCarrito)
+
+     
+
+     // console.log(articulosCarrito)
+     carritoHTML();
+}
+
+// Elimina el curso del carrito en el DOM
 
 
 
-// Muestra la playera seleccionada en el Carrito
+// Muestra el curso seleccionado en el Carrito
+function carritoHTML() {
 
+     vaciarCarrito();
 
-// Elimina las playeras del carrito en el DOM
+     articulosCarrito.forEach(curso => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+               <td>  
+                    <img src="${curso.imagen}" width=100>
+               </td>
+               <td>${curso.titulo}</td>
+               <td>${curso.precio}</td>
+               <td>${curso.cantidad} </td>
+               <td>
+                    <a href="#" class="borrar-curso" data-id="${curso.id}">X</a>
+               </td>
+          `;
+          contenedorCarrito.appendChild(row);
+     });
 
+}
 
