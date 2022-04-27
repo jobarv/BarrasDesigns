@@ -41,7 +41,7 @@ h2 {
 }
 p {
   font-size: 2rem;
-  margin-bottom: 5rem;
+  // margin-bottom: 5rem;
 }
 /* 
 ██████╗ ██╗      ██████╗ ██████╗  █████╗ ██╗     ███████╗███████╗
@@ -108,7 +108,10 @@ body {
   padding: 0.5rem;
   font-size: 2rem;
 }
+.card {
+  max-height: 34rem !important;
 
+}
 .icon {
   max-width: 3rem;
 }
