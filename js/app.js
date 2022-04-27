@@ -14,7 +14,7 @@ cargarEventListeners();
 function cargarEventListeners() {
      // Dispara cuando se presiona "Agregar Carrito"
      listaPlayeras.addEventListener('click', agregarPlayera);
-
+     
      // Cuando se elimina una playera del carrito
      carrito.addEventListener('click', eliminarPlayera);
 
@@ -25,10 +25,17 @@ function cargarEventListeners() {
 
 
 
-
 // Funciones
 // Función que añade la playera al carrito
 function agregarPlayera(e) {
+
+     //Avisa que se agregó una playera al carrito usando sweet alert
+     Swal.fire({
+          icon: "success",
+          title: "¡Excelente Selección!",
+          text: "La playera ha sido agregada al carrito con éxito"
+      });
+      
      e.preventDefault();
      // Delegation para agregar-carrito
      if (e.target.classList.contains('agregar-carrito')) {
