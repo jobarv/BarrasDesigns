@@ -126,3 +126,38 @@ function vaciarCarrito() {
           contenedorCarrito.removeChild(contenedorCarrito.firstChild);
       }
 }
+
+// Fetch API desde un JSON (Array)
+//La idea es que el cliente dé click en el botón y se otorqué un descuento sorpresa, para el ejemplo se está mandando llamar la información desde el JSON en la carpeta "data"
+
+const cargarJSONBtn = document.querySelector('#cargarJSON');
+cargarJSONBtn.addEventListener('click', obtenerDatos);
+
+
+function obtenerDatos() {
+    fetch('../data/regalo.json') 
+        .then( respuesta => {
+            return respuesta.json()
+        }) 
+        .then(resultado => {
+            mostrarHTML(resultado);
+            console.log(resultado)
+        })
+}
+
+function mostrarHTML({nombreUsuario,  dto, vencimiento, codigoValido}) {
+    const contenido = document.querySelector('#codigo');
+
+    contenido.innerHTML = `
+    <div class="resultado">
+        <p>Nombre de Usuario: ${nombreUsuario} </p>
+        
+        <p>Descuento Otorgado: ${dto} </p>
+        
+        <p>Vigencia: ${vencimiento} </p>
+        
+        <p>Código de Descuento: ${codigoValido} </p>
+        </div>
+    `
+    
+}

@@ -29,6 +29,11 @@
 .centrar-texto {
   text-align: center; }
 
+h1 {
+  margin: 0.67rem 2rem !important;
+  color: #ffff;
+  text-transform: uppercase; }
+
 h2 {
   font-size: 3rem; }
 
@@ -57,8 +62,7 @@ html {
 
 body {
   background-color: #ae46f3;
-  width: 100%;
-  height: 20rem; }
+  width: 100%; }
 
 .header {
   width: 100%;
@@ -105,7 +109,6 @@ body {
   max-width: 3rem; }
 
 footer {
-  position: fixed;
   bottom: 0;
   z-index: 999999; }
 
@@ -474,16 +477,29 @@ label {
    ██║   ██║██╔══╝  ██║╚██╗██║██║  ██║██╔══██║
    ██║   ██║███████╗██║ ╚████║██████╔╝██║  ██║
    ╚═╝   ╚═╝╚══════╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝ */
+#codigo {
+  display: flex;
+  justify-content: center; }
+
+.resultado {
+  flex-direction: column; }
+
 .cont-tienda {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 30rem;
+  grid-template-columns: repeat(4, 1fr) !important;
+  grid-auto-rows: 50rem;
   padding: 2rem;
   grid-gap: 1rem; }
 
+.cardTienda {
+  background-color: #000 !important;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .tienda__img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
   object-fit: cover; }
 
 .tienda__item {
@@ -518,8 +534,7 @@ label {
 
 @media (min-width: 468px) {
   .cont-tienda {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 20rem; }
+    grid-template-columns: repeat(2, 1fr); }
   .tienda__item:nth-child(1) {
     grid-column-start: span 1; }
   .tienda__item:nth-child(2) {
@@ -533,10 +548,9 @@ label {
   .tienda__item:nth-child(6) {
     grid-column-start: span 1; } }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .cont-tienda {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 20rem; }
+    grid-template-columns: repeat(3, 1fr); }
   .tienda__item:nth-child(1) {
     grid-column-start: span 1; }
   .tienda__item:nth-child(2) {
@@ -551,4 +565,20 @@ label {
     grid-column-start: span 1; } }
 
 .ListaCarrito {
+  color: #ffff; }
+
+.precio {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  text-align: center;
+  font-size: 29px; }
+
+.primario-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 18px;
+  font-size: 2rem; }
+
+.primario-btn:hover {
+  background-color: #000;
   color: #ffff; }
