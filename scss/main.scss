@@ -71,7 +71,9 @@ body {
   background-color: $color-fondobody;
   width: 100%;
 }
-
+a {
+  text-decoration: none;
+}
 .header {
   width: 100%;
   height: 100%;
@@ -180,6 +182,14 @@ footer {
   .cont-foot {
     width: 100%;
   }
+  .bgHero,
+  .contHeader {
+    height: 23rem;
+  }
+}
+.oscuro{ 
+  background-color: $color-blanco;
+  color: $color-textparr;
 }
 /* 
 ██╗███╗   ██╗██████╗ ███████╗██╗  ██╗
@@ -514,6 +524,7 @@ label {
 .boton {
   height: 4rem;
   font-size: 2rem;
+
 }
 .btn {
   color: $color-blanco;
@@ -526,13 +537,31 @@ label {
   background-color: $color-fondobody;
   color: $color-hover;
 }
-/* 
-████████╗██╗███████╗███╗   ██╗██████╗  █████╗ 
-╚══██╔══╝██║██╔════╝████╗  ██║██╔══██╗██╔══██╗
-   ██║   ██║█████╗  ██╔██╗ ██║██║  ██║███████║
-   ██║   ██║██╔══╝  ██║╚██╗██║██║  ██║██╔══██║
-   ██║   ██║███████╗██║ ╚████║██████╔╝██║  ██║
-   ╚═╝   ╚═╝╚══════╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝ */
+/*
+███████╗██╗███████╗███╗   ██╗██████╗  █████╗ 
+  ██╔══╝██║██╔════╝████╗  ██║██╔══██╗██╔══██╗
+  ██║   ██║█████╗  ██╔██╗ ██║██║  ██║███████║
+  ██║   ██║██╔══╝  ██║╚██╗██║██║  ██║██╔══██║ 
+  ██║   ██║███████╗██║ ╚████║██████╔╝██║  ██║
+  ╚═╝   ╚═╝╚══════╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝ */
+
+.submenu {
+  position: relative;
+}
+.submenu #carrito {
+  display: none;
+}
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: $color-fondonegro;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
 #codigo {
   display: flex;
   justify-content: center;
@@ -542,7 +571,7 @@ label {
 }
 .cont-tienda {
   display: grid;
-  grid-template-columns: repeat(4, 1fr) !important;
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 50rem;
   padding: 2rem;
   grid-gap: 1rem;
@@ -555,7 +584,8 @@ label {
   align-items: center;
 }
 .tienda__img {
-  width: 90%;
+  max-width: 90%;
+  max-height: 90%;
   object-fit: cover;
 }
 .tienda__item {
@@ -571,69 +601,42 @@ label {
   padding: 1rem;
 }
 .tienda__item:nth-child(1) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
 .tienda__item:nth-child(2) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
 .tienda__item:nth-child(3) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
 .tienda__item:nth-child(4) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
 .tienda__item:nth-child(5) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
 .tienda__item:nth-child(6) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
-@media (min-width: 468px) {
-  .cont-tienda {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .tienda__item:nth-child(1) {
-    grid-column-start: span 1;
-  }
-  .tienda__item:nth-child(2) {
-    grid-column-start: span 1;
-  }
-  .tienda__item:nth-child(3) {
-    grid-column-start: span 1;
-  }
-  .tienda__item:nth-child(4) {
-    grid-column-start: span 1;
-  }
-  .tienda__item:nth-child(5) {
-    grid-column-start: span 1;
-  }
-  .tienda__item:nth-child(6) {
-    grid-column-start: span 1;
-  }
-}
-@media (min-width: 960px) {
+@media (max-width: 960px) {
   .cont-tienda {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .tienda__item:nth-child(1) {
-    grid-column-start: span 1;
-  }
-  .tienda__item:nth-child(2) {
-    grid-column-start: span 1;
-  }
-  .tienda__item:nth-child(3) {
-    grid-column-start: span 1;
-  }
-  .tienda__item:nth-child(4) {
-    grid-column-start: span 1;
-  }
-  .tienda__item:nth-child(5) {
-    grid-column-start: span 1;
-  }
-  .tienda__item:nth-child(6) {
-    grid-column-start: span 1;
+    grid-auto-rows: 35rem;
   }
 }
+@media (max-width: 468px) {
+  .cont-tienda {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 35rem;
+  }
+}
+
+ @media (min-width: 469px) and (max-width: 720px){
+  .cont-tienda {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 35rem;
+  }
+ }
 .ListaCarrito {
   color: $color-blanco;
 }
@@ -642,6 +645,7 @@ label {
   margin-bottom: 0 !important;
   text-align: center;
   font-size: 29px;
+  color: $color-blanco;
 }
 
 .primario-btn {

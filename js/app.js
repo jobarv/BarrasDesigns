@@ -1,5 +1,9 @@
 //Se pretende agregar funcionalidad de sesión de usuario. Para tener la capcidad de enviar al cliente recordatorio de pago, así como agregar eventualmente una base de datos en MONGO.
-
+function cambiarModo() {
+     var cuerpoweb = document.body;
+     cuerpoweb.classList.toggle("oscuro");
+   }
+   
 
 // Variables
 const carrito = document.querySelector('#carrito');
@@ -18,12 +22,17 @@ function cargarEventListeners() {
      // Cuando se elimina una playera del carrito
      carrito.addEventListener('click', eliminarPlayera);
 
+     // Muestra los productos en localStorage 
+
+     document.addEventListener('DOMContentLoaded', ()=> {
+          articulosCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
+          carritoHTML();
+     })
+
      // Al Vaciar el carrito
      vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
 }
-
-
 
 // Funciones
 // Función que añade la playera al carrito
@@ -70,11 +79,6 @@ function leerDatosPlayera(Playera) {
           articulosCarrito = [...articulosCarrito, infoPlayera];
      }
 
-     // console.log(articulosCarrito)
-
-
-
-     // console.log(articulosCarrito)
      carritoHTML();
 }
 
@@ -114,7 +118,15 @@ function carritoHTML() {
           contenedorCarrito.appendChild(row);
      });
 
+     // Agregar el carrito de compras al Storage 
+
+     sincronizarStorage();
 }
+
+function sincronizarStorage() {
+     localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
+}
+
 // Elimina los cursos del carrito en el DOM
 function vaciarCarrito() {
      // forma lenta
@@ -145,7 +157,7 @@ function obtenerDatos() {
         })
 }
 
-function mostrarHTML({nombreUsuario,  dto, vencimiento, codigoValido}) {
+function mostrarHTML({nombreUsuario,  dto, vencimiento, codigoValido}){
     const contenido = document.querySelector('#codigo');
 
     contenido.innerHTML = `
