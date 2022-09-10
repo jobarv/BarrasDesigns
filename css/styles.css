@@ -123,7 +123,7 @@ a {
   width: 100%;
 }
 
-.burgerMenu {
+.desktopMenu {
   z-index: 1000;
 }
 
@@ -345,13 +345,60 @@ ul {
     height: 23rem;
   }
 }
+
 @media (max-width: 1024px) {
-  .menu {
+  .desktopMenu {
     display: none;
   }
-     
+
+  #logoDesktop {
+    background: var(--fondonegro);
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: var(--fondonegro);
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: var(--textparr);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 20%;
+    top: 40%;
+  }
+
+  .topnav a:hover {
+    background-color: var(--fondobody);
+    color: var(--blanco);
+  }
+
+  .active {
+    background-color: var(--fondonegro);
+    color: white;
+  }
+
 }
+
 @media (min-width: 1024px) {
+
+  .burgerMenu {
+    display: none;
+  }
+
   .nav-bar {
     display: none;
   }

@@ -32,13 +32,16 @@
   <header class="header">
 
     <div class="bgHero">
-      <div class="contHeader">
-        <a href="./index.html">
-          <img class="logo animate__animated animate__rotateIn" src="./img/Logo1-01.png" alt="logo" /></a>
-        <div class="burgerMenu">
+      <div class="desktopMenu">
+        <div class="contHeader">
 
-          <span class="nav-bar" id="btnMenu">
-            <i class="fa-sharp fa-solid fa-bars"></i>Menú</span>
+
+          <a href="./index.html" id="logoDesktop">
+            <img class="logo animate__animated animate__rotateIn" src="./img/Logo1-01.png" alt="logo" /></a>
+
+            <span class="nav-bar" id="btnMenu">
+              <i class="fa-sharp fa-solid fa-bars"></i>Menú</span>
+          </a>
           <nav class="main-nav">
             <ul class="menu" id="menu">
               <li class="menu__item"><a href="./html/tienda.html" class="menu__link">Tienda</a></li>
@@ -55,11 +58,39 @@
               </li>
               <li class="menu__item"><a href="./html/galeria.html" class="menu__link">Galería</a></li>
               <li class="menu__item"><a href="./html/contacto.html" class="menu__link">Contacto</a></li>
+            </ul>
         </div>
+      </div>
+      <div class="burgerMenu" id="burgerMenu">
+        <div class="topnav">
+          <a href="./index.html" id="logoDesktop">
+            <img class="active logo animate__animated animate__rotateIn" src="./img/Logo1-01.png" alt="logo" /></a>
+          <div id="myLinks">
+            <ul class="menu" id="menu">
+              <li class="menu__item"><a href="./html/tienda.html" class="menu__link">Tienda</a></li>
+              <li class="menu__item"><a href="./index.html" class="menu__link">Inicio</a></li>
+              <li class="menu__item"><a href="./html/nosotros.html" class="menu__link">Nosotros</a></li>
+              <li class="menu__item container-submenu">
+                <a href="#" class="menu__link submenu-btn">Servicios <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li class="menu__item"><a href="#" class="menu__link">Voz en Off</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Desarrollo Web</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Artículos Personalizados</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Marketing</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"><a href="./html/galeria.html" class="menu__link">Galería</a></li>
+              <li class="menu__item"><a href="./html/contacto.html" class="menu__link">Contacto</a></li>
+            </ul>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-sharp fa-solid fa-bars"></i>Menú</span> </a>
+        </div>
+      </div>
+    </div>
 
-        </ul>
-        </nav>
-        <!-- <nav class="contLk">
+    </nav>
+    <!-- <nav class="contLk">
           <a class="lk" href="./html/tienda.html">
             <li>Tienda</li>
           </a>
@@ -79,7 +110,6 @@
             <li>Contacto</li>
           </a>
         </nav> -->
-      </div>
     </div>
 
     </div>

@@ -1,4 +1,4 @@
-const btnMenu = document.querySelector("#btnMenu");
+/* const btnMenu = document.querySelector("#btnMenu");
 const menu = document.querySelector("#menu");
 
 btnMenu.addEventListener("click", function () {
@@ -24,4 +24,13 @@ for (let i = 0; i < subMenuBtn.clientHeight; i++) {
             }
         }
     });
-}
+} */
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
