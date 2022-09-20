@@ -342,11 +342,19 @@ ul {
 
   .bgHero,
   .contHeader {
-    height: 23rem;
+    height: 16rem;
   }
 }
 
 @media (max-width: 1024px) {
+  .menu {
+    width: 100%;
+    height: 209px;
+    z-index: 90;
+    position: relative;
+    background-color: var(--fondonegro);
+  }
+
   .desktopMenu {
     display: none;
   }
@@ -367,18 +375,21 @@ ul {
 
   .topnav a {
     color: var(--textparr);
-    padding: 14px 16px;
+    padding: 4px 39px 3px 5px;
     text-decoration: none;
     font-size: 17px;
     display: block;
+    margin: 9px -54px -10px 63px;
+
   }
-  
+
   .topnav a.icon {
     background: black;
     display: block;
     position: absolute;
     right: 20%;
     top: 40%;
+    z-index: 100;
   }
 
   .topnav a:hover {
