@@ -825,7 +825,7 @@ label {
 }
 
 .boton-flex {
-  height: 8rem;
+  height: 6rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
