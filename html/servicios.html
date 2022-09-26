@@ -42,8 +42,8 @@
           <a href="../index.html" id="logoDesktop">
             <img class="logo animate__animated animate__rotateIn" src="../img/Logo1-01.png" alt="logo" /></a>
 
-            <span class="nav-bar" id="btnMenu">
-              <i class="fa-sharp fa-solid fa-bars"></i>Menú</span>
+          <span class="nav-bar" id="btnMenu">
+            <i class="fa-sharp fa-solid fa-bars"></i>Menú</span>
           </a>
           <nav class="main-nav">
             <ul class="menu" id="menu">
@@ -51,96 +51,101 @@
               <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
               <li class="menu__item"><a href="./nosotros.html" class="menu__link">Nosotros</a></li>
               <li class="menu__item container-submenu">
-                <a href="./servicios.html" class="menu__link submenu-btn">Servicios <i class="fa-solid fa-angle-down"></i></a>
+                <a href="./servicios.html" class="menu__link submenu-btn">Servicios <i
+                    class="fa-solid fa-angle-down"></i></a>
                 <ul class="submenu">
                   <li class="menu__item"><a href="./vozenoff.html" class="menu__link">Voz en Off</a></li>
                   <li class="menu__item"><a href="./desarrolloweb.html" class="menu__link">Desarrollo Web</a></li>
-                  <li class="menu__item"><a href="./promocionales.html" class="menu__link">Artículos Personalizados</a></li>
+                  <li class="menu__item"><a href="./promocionales.html" class="menu__link">Artículos Personalizados</a>
+                  </li>
                 </ul>
               </li>
               <li class="menu__item"><a href="./galeria.html" class="menu__link">Galería</a></li>
               <li class="menu__item"><a href="./contacto.html" class="menu__link">Contacto</a></li>
             </ul>
+
+            <div class="burgerMenu" id="burgerMenu">
+              <div class="topnav">
+                <a href="../index.html" id="logoDesktop">
+                  <img class="active logo animate__animated animate__rotateIn" src="../img/Logo1-01.png"
+                    alt="logo" /></a>
+                <div id="myLinks">
+                  <ul class="menu" id="menu">
+                    <li class="menu__item"><a href="../tienda" class="menu__link">Tienda</a></li>
+                    <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
+                    <li class="menu__item"><a href="./nosotros.html" class="menu__link">Nosotros</a></li>
+                    <li class="menu__item container-submenu">
+                      <a href="./servicios.html" class="menu__link submenu-btn">Servicios</a>
+                    </li>
+                    <li class="menu__item"><a href="./galeria.html" class="menu__link">Galería</a></li>
+                    <li class="menu__item"><a href="./contacto.html" class="menu__link">Contacto</a></li>
+                  </ul>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+                  style="background-color:transparent !Important;">
+                  <i class="fa-sharp fa-solid fa-bars" style="font-size: 4rem;"></i></a>
+              </div>
+            </div>
           </nav>
-        </div>
-      </div>
-      <div class="burgerMenu" id="burgerMenu">
-        <div class="topnav">
-          <a href="../index.html" id="logoDesktop">
-            <img class="active logo animate__animated animate__rotateIn" src="../img/Logo1-01.png" alt="logo" /></a>
-          <div id="myLinks">
-            <ul class="menu" id="menu">
-              <li class="menu__item"><a href="../tienda" class="menu__link">Tienda</a></li>
-              <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
-              <li class="menu__item"><a href="./nosotros.html" class="menu__link">Nosotros</a></li>
-              <li class="menu__item container-submenu">
-                <a href="./servicios.html" class="menu__link submenu-btn">Servicios</a>
-              </li>
-              <li class="menu__item"><a href="./galeria.html" class="menu__link">Galería</a></li>
-              <li class="menu__item"><a href="./contacto.html" class="menu__link">Contacto</a></li>
-            </ul>
-          </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="background-color:transparent !Important;">
-            <i class="fa-sharp fa-solid fa-bars" style="font-size: 4rem;"></i></a>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="servicios" style="grid-auto-rows: 10rem; grid-template-columns: repeat(1, 1fr);">
 
+    <section class="servicios" style="grid-auto-rows: 10rem; grid-template-columns: repeat(1, 1fr);">
       <div class="servicios__item">
         <!-- <img src="" class="servicios__img" alt="mainServicios"> -->
         <div class="servicios__text">
-          <h2>Contamos con los servicios de voz en off, desarrollo web y personalización de artículos promocionales.</h2>
+          <h2>Contamos con los servicios de voz en off, desarrollo web y personalización de artículos promocionales.
+          </h2>
         </div>
       </div>
-
     </section>
 
     <section class="servicios">
-      
       <a href="./vozenoff.html">
-      <div class="servicios__item">
-        <img src="../img/vozenoff.jpg" class="servicios__img" alt="mainServicios">
+        <div class="servicios__item">
+          <img src="../img/vozenoff.jpg" class="servicios__img" alt="mainServicios">
 
-        <div class="servicios__text">
-          <h3>Voz en Off</h3>
-          <p>Contamos con una de las voces más talentosas y reconocidas en Nuevo León, puedes ver su demoreel dando click a está tarjeta, envianos tu guión o, trabajemos en conjunto para desarrollar uno desde cero.</p>
+          <div class="servicios__text">
+            <h3>Voz en Off</h3>
+            <p>Contamos con una de las voces más talentosas y reconocidas en Nuevo León, puedes ver su demoreel dando
+              click a está tarjeta, envianos tu guión o, trabajemos en conjunto para desarrollar uno desde cero.</p>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
 
       <a href="./desarrolloweb.html">
-      <div class="servicios__item">
-        <img src="../img/desarrollo.jpg" class="servicios__img" alt="mainServicios">
+        <div class="servicios__item">
+          <img src="../img/desarrollo.jpg" class="servicios__img" alt="mainServicios">
 
-        <div class="servicios__text">
-          <h3>Desarrollo Web</h3>
-          <p>Desarrollamos desde cero tu página web, trabajando de la mano contigo para revisar los detalles que tengas tú o tu cliente para tener un sitio web de primera, puedes ver nuestro portafolio dando click a esta tarjeta.</p>
+          <div class="servicios__text">
+            <h3>Desarrollo Web</h3>
+            <p>Desarrollamos desde cero tu página web, trabajando de la mano contigo para revisar los detalles que
+              tengas tú o tu cliente para tener un sitio web de primera, puedes ver nuestro portafolio dando click a
+              esta tarjeta.</p>
+          </div>
+        </div>
+      </a>
+    </section>
+<section>
+
+  <a href="./promocionales.html">
+    <div class="servicios__item" style="grid-template-columns: repeat(1,1fr);grid-gap:4rem;height:23rem;margin-top:8rem;margin-bottom:2rem;">
+      <img src="../img/promocionales_portada.png" class="servicios__img" alt="mainServicios">
+      <div class="servicios__text">
+        <h3>Promocionales</h3>
+        <p>Personalizamos artículos promocionales para tu evento, tu empresa o para ti, desde tazas, plumas,
+          accesorios, textiles y más...
+          
+          Checa las diferentes técnicas que usamos dando click a está tarjeta.</p>
         </div>
       </div>
     </a>
-    </section>
-
-    <section class="servicios" style="grid-template-columns: repeat(1,1fr);">
-      
-    <a href="./promocionales.html">
-      <div class="servicios__item">
-        <img src="" class="servicios__img" alt="mainServicios">
-        <div class="servicios__text">
-          <h3>Promocionales</h3>
-          <p>Personalizamos artículos promocionales para tu evento, tu empresa o para ti, desde tazas, plumas, accesorios, textiles y más...
-            
-            Checa las diferentes técnicas que usamos dando click a está tarjeta.</p>
-        </div>
-      </div>
-    </a>
-
-    </section>
-
-
+    
+  </section>
 
   </main>
 
