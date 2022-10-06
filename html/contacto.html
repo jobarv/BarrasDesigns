@@ -62,6 +62,7 @@
               <li class="menu__item"><a href="./galeria.html" class="menu__link">Galería</a></li>
               <li class="menu__item"><a href="./contacto.html" class="menu__link">Contacto</a></li>
             </ul>
+          </nav>
         </div>
       </div>
       <div class="burgerMenu" id="burgerMenu">
@@ -75,6 +76,12 @@
               <li class="menu__item"><a href="./nosotros.html" class="menu__link">Nosotros</a></li>
               <li class="menu__item container-submenu">
                 <a href="./servicios.html" class="menu__link submenu-btn">Servicios</a>
+                <!--                 <ul class="submenu">
+                  <li class="menu__item"><a href="#" class="menu__link">Voz en Off</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Desarrollo Web</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Promocionales</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Marketing</a></li>
+                </ul> -->
               </li>
               <li class="menu__item"><a href="./galeria.html" class="menu__link">Galería</a></li>
               <li class="menu__item"><a href="./contacto.html" class="menu__link">Contacto</a></li>
@@ -86,75 +93,75 @@
         </div>
       </div>
     </div>
-
-    </nav>
-
   </header>
 
   <main>
-    <section class="bkg">
-      <div class="cont-contacto">
-        <form class="form row g-3" action="../contacto.php" method="POST">
-          <div class="fieldset">
-            <fieldset>
-              <legend style="color: white;">
-                <h1>¡Contáctanos! estaremos felices de atenderte</h1>
-              </legend>
+    <div class="contenedor sombra">
 
-              <div class="col-md-12">
-                <label for="tuNombre" class="form-label">Tu Nombre</label>
-                <input type="text" class="form-control" id="tunombre" name="name">
-              </div>
+      <section class="bkg">
+        <div class="cont-contacto">
+          <form class="form row g-3" action="../contacto.php" method="POST">
+            <div class="fieldset">
+              <fieldset>
+                <legend style="color: white;">
+                  <h1>¡Contáctanos! estaremos felices de atenderte</h1>
+                </legend>
+
+                <div class="col-md-12">
+                  <label for="tuNombre" class="form-label">Tu Nombre</label>
+                  <input type="text" class="form-control" id="tunombre" name="name">
+                </div>
 
 
-              <div class="col-md-12">
-                <label for="inputEmail4" class="form-label">Tu Email</label>
-                <input type="email" class="form-control" id="inputEmail4" name="mail">
-              </div>
-              <div class="col-md-12">
-                <label for="tuNumero" class="form-label">Tu número</label>
-                <input type="number" class="form-control" id="tuNumero" name="phone">
-              </div>
-              <div class="col-md-12">
-                <label for="inputCity" class="form-label">Tu Ciudad</label>
-                <input type="text" class="form-control" id="inputCity" name="city">
-              </div>
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label">Tu Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" name="mail">
+                </div>
+                <div class="col-md-12">
+                  <label for="tuNumero" class="form-label">Tu número</label>
+                  <input type="number" class="form-control" id="tuNumero" name="phone">
+                </div>
+                <div class="col-md-12">
+                  <label for="inputCity" class="form-label">Tu Ciudad</label>
+                  <input type="text" class="form-control" id="inputCity" name="city">
+                </div>
 
-              <div class="col-md-12">
-                <label for="message" class="form-label lbmsg">Mensaje</label>
-                <br />
-                <textarea name="message" class="form-control" cols="10" rows="3"></textarea>
-              </div>
+                <div class="col-md-12">
+                  <label for="message" class="form-label lbmsg">Mensaje</label>
+                  <br />
+                  <textarea name="message" class="form-control" cols="10" rows="3"></textarea>
+                </div>
 
-              <div class="boton-flex">
-                <button type="submit" class="btn boton">Enviar</button>
-              </div>
-            </fieldset>
-          </div>
-        </form>
-      </div>
-
-    </section>
-    <div>
-      <h2 class="text-center text-white">Mira lo que dicen nuestros clientes</h2>
-
-      <div class="quote">
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-          <img class=" card-img" src="../img/servicios1.jpg" alt="Card image cap">
-          <div class="card-img-overlay">
-            <h3 class="card-title">Excelente calidad en sus producto y en el diseño 5 estrellas.</h3>
-          </div>
+                <div class="boton-flex">
+                  <button type="submit" class="btn boton">Enviar</button>
+                </div>
+              </fieldset>
+            </div>
+          </form>
         </div>
 
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-          <img class=" card-img" src="../img/servicios2.jpg" alt="Card image cap">
-          <div class="card-img-overlay">
-            <h3 class="card-title">No hubo ningún problema, muy contento con la atención.</h3>
+      </section>
+      <div>
+        <h2 class="text-center text-white">Mira lo que dicen nuestros clientes</h2>
+
+        <div class="quote">
+          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <img class=" card-img" src="../img/servicios1.jpg" alt="Card image cap">
+            <div class="card-img-overlay">
+              <h3 class="card-title">Excelente calidad en sus producto y en el diseño 5 estrellas.</h3>
+            </div>
+          </div>
+
+          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <img class=" card-img" src="../img/servicios2.jpg" alt="Card image cap">
+            <div class="card-img-overlay">
+              <h3 class="card-title">No hubo ningún problema, muy contento con la atención.</h3>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
-
     </div>
 
   </main>
