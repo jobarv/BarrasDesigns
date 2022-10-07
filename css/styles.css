@@ -15,6 +15,7 @@
 ██████╔╝███████╗    ╚██████╗╚██████╔╝███████╗╚██████╔╝██║  ██║███████╗███████║
 */
 :root {
+  --fondobody0: #ae46f3;
   --fondobody: #873cdd;
   --fondonegro: #000;
   --fondobody2: #9828e2;
@@ -48,6 +49,7 @@ h1 {
   margin: 0.67rem 2rem !important;
   color: #ffff;
   text-transform: uppercase;
+  font-size: 3rem;
 }
 
 .title {
@@ -58,11 +60,11 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* 
@@ -87,7 +89,7 @@ html {
 }
 
 body {
-  background-color: #ae46f3;
+  background-color: var(--fondobody0);
   width: 100%;
 }
 
@@ -111,6 +113,33 @@ main {
   -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
   box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
 }
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  font-size: 4rem;
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 1rem solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15rem; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  20% { border-color: white }
+}
+
 
 a {
   text-decoration: none;
@@ -878,7 +907,7 @@ footer {
 .campo input[type="email"],
 .campo textarea {
   width: 100%;
-  background-color: #ae46f3;
+  background-color: var(--fondobody0);
   color: #ffff;
   padding: 0.5rem;
   border: none;
@@ -914,7 +943,7 @@ label {
 }
 
 .btn:hover {
-  background-color: #ae46f3;
+  background-color: var(--fondobody0);
   color: #ffff;
 }
 
