@@ -92,7 +92,9 @@ body {
   background-color: var(--fondobody0);
   width: 100%;
 }
-
+.header_enlaces {
+  display: flex;
+}
 main {
   margin-top: 2rem;
   padding: 0rem 1rem 0rem 1rem;
@@ -253,6 +255,7 @@ ul {
 footer {
   background-color: var(--fondonegro);
   padding: 70px 0;
+  margin-top: 8rem;
 }
 
 .footer-col {
@@ -628,8 +631,8 @@ footer {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 30rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
   padding: 2rem;
   grid-gap: 1rem;
 }
@@ -648,14 +651,12 @@ footer {
 .servicios__item {
   position: relative;
 }
-
 .servicios2 {
   position: relative;
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-auto-rows: 15rem;
   padding: 2rem;
   grid-gap: 1rem;
 }
@@ -685,19 +686,19 @@ footer {
 .galeria__item:nth-child(4) {
   grid-column-start: span 1;
 }
-
+@media (min-width: 782px) and (max-width: 1055px) {
+  .servicios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 782px) {
   .servicios {
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 40rem;
   }
 
 }
 
 @media (max-width: 400px) {
-  .servicios {
-    grid-auto-rows: 20rem;
-  }
 
   .textoServicios {
     font-size: 1rem !important;
@@ -722,7 +723,7 @@ footer {
 ╚██████╔╝██║  ██║███████╗███████╗██║  ██║██║██║  ██║ */
 .cont-galeria {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: 30rem;
   padding: 2rem;
   grid-gap: 1rem;
@@ -749,27 +750,27 @@ footer {
 }
 
 .galeria__item:nth-child(1) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
 
 .galeria__item:nth-child(2) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
 
 .galeria__item:nth-child(3) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
 
 .galeria__item:nth-child(4) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
 
 .galeria__item:nth-child(5) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
 
 .galeria__item:nth-child(6) {
-  grid-column-start: span 3;
+  grid-column-start: span 1;
 }
 
 @media (min-width: 468px) {
@@ -805,7 +806,7 @@ footer {
 
 @media (min-width: 768px) {
   .cont-galeria {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 20rem;
   }
 
@@ -842,7 +843,8 @@ footer {
   ╚████╔╝╚██████╔███████╗    █████████║ ╚████║    ╚██████╔██║    ██║     
    ╚═══╝  ╚═════╝╚══════╝    ╚══════╚═╝  ╚═══╝     ╚═════╝╚═╝    ╚═╝  */
 
-.vozEnOff {
+.vozEnOff, 
+.promocionales {
  text-align: center;
   color: var(--blanco);
 }
@@ -880,6 +882,78 @@ footer {
 ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝ ╚═════╝      ╚══╝╚══╝ ╚══════╝╚═════╝  */
 
 .desarrollo {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  padding: 2rem;
+  grid-gap: 1rem;
+}
+
+.desarrollo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.desarrollo__item {
+  position: relative;
+}
+.desarrollo2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 15rem;
+  padding: 2rem;
+  grid-gap: 1rem;
+}
+
+.desarrollo__text {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0), black);
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+}
+
+.galeria__item:nth-child(1) {
+  grid-column-start: span 1;
+}
+
+.galeria__item:nth-child(2) {
+  grid-column-start: span 1;
+}
+
+.galeria__item:nth-child(3) {
+  grid-column-start: span 1;
+}
+
+.galeria__item:nth-child(4) {
+  grid-column-start: span 1;
+}
+@media (max-width: 1024px) {
+  .desarrollo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+@media (max-width: 740px) {
+  .desarrollo {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+}
+
+@media (max-width: 400px) {
+
+  .textoDesarrollo {
+    font-size: 1rem !important;
+  }
 
 }
 
