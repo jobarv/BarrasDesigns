@@ -868,10 +868,19 @@ footer {
   color: var(--blanco);
 
 }
-
-.itemServicios {
+.vozenoff__item {
+  position:relative;
   background-color: var(--fondobody);
   cursor: pointer;
+}
+.vozenoff__text {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0), black);
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
 }
 /* 
 ██████╗ ███████╗███████╗ █████╗ ██████╗ ██████╗  ██████╗ ██╗     ██╗      ██████╗     ██╗    ██╗███████╗██████╗ 
