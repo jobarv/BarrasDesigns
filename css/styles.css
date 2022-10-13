@@ -498,7 +498,7 @@ footer {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 50rem;
+  grid-auto-rows: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
